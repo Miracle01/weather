@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+
+/*desktop*/
+body {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 600;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 1.7em;
+}
+
+/*blue background with trees*/
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('./blue.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  overflow: hidden;
+}
+
+/*transparent box displaying weather information*/
+.title {
+  display: block;
+  margin: auto;
+  width: 30%;
+  min-width: 400px;
+  height: 70%;
+  background: linear-gradient(to bottom right, transparent, rgba(255, 255, 255, .5), transparent, transparent);
+  margin-top: 4%;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, .1);
+  padding: 20px;
+
+}
+
+/*user location*/
+.location {
+  display: block;
+  margin: 20px;
+  margin-bottom: 10px;
+  background: #2f9ad0;
+  border-radius: 2px;
+  font-size: 1em;
+  padding: 7px;
+}
+
+/*current temperature*/
+.temp {
+  display: inline-block;
+  margin: 5px;
+  font-size: 2em;
+  vertical-align: super;
+}
+
+/*wrapper for temp high/low*/
+.minMaxWrapper {
+  display: block;
+  margin: auto;
+  margin-bottom: 25px;
+  width: 70%;
+}
+
+/*titles for temp type eg high/low*/
+.tempTitle {
+  display: inline-block;
+  width: 40%;
+  font-size: .8em;
+}
+
+/*temperature numbers*/
+.tempMax, .tempMin {
+  display: inline-block;
+  width: 40%;
+  font-size: .8em;
+}
+
+/*weather icon*/
+.icon {
+  height: 100px;
+  width: 100px;
+  display: block;
+}
+.icon-wrapper {
+  display: inline-block;
+}
+
+/*current weather conditions wrapper*/
+.current {
+  background: linear-gradient(#2f9ad0, #3483c6);
+  padding: 10px;
+  margin: auto;
+  border-radius: 2px;
+  width: 80%;
+  margin-top: 2%;
+  margin-bottom: 9%;
+}
+
+/*current weather conditions abbreviated description*/
+.conditions {
+  display: block;
+  height: 10px;
+  font-size: .7em;
+  margin-top: -36px;
+}
+/*current weather description full text*/
+.conditions-long {
+  text-transform: none;
+  font-size: .9em;
+}
+
+
+/*mobile*/
+@media screen and (max-width: 650px) {
+
+/*adjust font size for mobile*/
+body {
+  font-size: 1.5em;
+}
+
+/*adjusts wrapper for mobile*/
+.title {
+  width: 80%;
+  height: 80%;
+  min-width: 80%;
+}
+
+/*adjusts temp size for mobile*/
+.temp {
+  font-size: 1.8em;
+}
+
+/*weather icon*/
+.icon {
+  height: 80px;
+  width: 80px;
+}
+
+/*current conditions*/
+.conditions {
+  margin-top: -25px;
+}
+
+}
